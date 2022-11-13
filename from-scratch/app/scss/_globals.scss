@@ -1,0 +1,19 @@
+html {
+    font-size: 100%; // zoom level in the browser
+    box-sizing: border-box; // size of elements, include padding in the final width
+}
+
+
+// TODO: Why are we using this?
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    line-height: 1.3;
+}
