@@ -1,0 +1,17 @@
+.header {
+    nav {
+        padding: 24px;
+    }
+
+    &__links {
+        font-size: $font-size-medium;
+        color: $grayishBlue;
+
+        a {
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+        }
+
+    }
+}
