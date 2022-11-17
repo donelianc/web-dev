@@ -1,15 +1,47 @@
 .header {
     nav {
-        padding: 24px;
+        padding: 1.0625rem 1.5rem;
+        background-color: $white;
+    }
+
+    &__logo {
+        width: 8.8125rem;
+        height: 1.375rem;
     }
 
     &__links {
-        font-size: $font-size-medium;
-        color: $grayishBlue;
 
         a {
+            position: relative;
+            font-size: $font-size-medium;
+            font-weight: 400;
+            color: $grayishBlue;
+            transition: color 300ms ease-in-out;
+
             &:not(:last-child) {
                 margin-right: 32px;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 3px;
+                background: linear-gradient(to right, $limeGreen, $brightCyan);
+                left: 0;
+                right: 0;
+                bottom: -30px;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                color: $darkBlue;
+
+                &::before {
+                    opacity: 1;
+                    ;
+                }
             }
         }
 

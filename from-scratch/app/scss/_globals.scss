@@ -20,9 +20,10 @@ body {
 }
 
 // Visited anchor links
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
     text-decoration: none;
-    color: $grayishBlue;
 }
 
 // Flexbox
@@ -44,15 +45,23 @@ a, a:visited, a:hover {
 
 
 // Buttons
-button, .button {
-    padding: 1rem 1.875rem;
+button,
+.button {
+    padding: 0.875rem 2.1875rem;
     color: $white;
-    font-size: $font-size-small;
+    font-size: $font-size-medium;
     font-weight: 600;
     background: linear-gradient(to right, $limeGreen, $brightCyan);
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+        opacity: 0.7;
+
+    }
+
 }
 
 // Visibility
